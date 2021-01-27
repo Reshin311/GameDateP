@@ -7,6 +7,8 @@ target 'GameDataPractice' do
 
   # Pods for GameDataPractice
     pod 'Firebase/Analytics'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Firestore'
 
 
 end

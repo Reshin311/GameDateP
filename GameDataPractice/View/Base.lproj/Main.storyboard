@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O0-gt-C2k">
-                                <rect key="frame" x="100" y="64" width="214.5" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MatchResult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O0-gt-C2k">
+                                <rect key="frame" x="33" y="64" width="348.5" height="72"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -122,6 +122,9 @@
                                     <constraint firstAttribute="width" constant="150" id="L6S-eO-oNi"/>
                                 </constraints>
                                 <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="tappedRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ss2-uD-8bo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -137,10 +140,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="MatchResultTextField" destination="Fxe-is-8GT" id="50t-6A-Lk9"/>
                         <outlet property="dateTextField" destination="ULp-WY-Pv5" id="87S-97-H8j"/>
                         <outlet property="gameMemoTextField" destination="oc4-KP-mn8" id="NPM-hW-i58"/>
                         <outlet property="gameRegisterButton" destination="C7z-Bg-yrd" id="SlF-9b-fQF"/>
+                        <outlet property="matchResultTextField" destination="Fxe-is-8GT" id="ljD-WQ-T51"/>
                         <outlet property="opponentTextField" destination="8TR-dO-jlA" id="CdQ-Fc-y3U"/>
                         <outlet property="stadiumTextField" destination="2zj-tT-Fzb" id="pkg-dY-Yxf"/>
                     </connections>

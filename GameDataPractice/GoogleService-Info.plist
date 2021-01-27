@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1085246906692-7bmos777uq0peee4qq7i4ii26f4rl8bb.apps.googleusercontent.com</string>
+	<string>389192925801-of1umueglcqh1be8skv9a6d5ons2kcpp.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1085246906692-7bmos777uq0peee4qq7i4ii26f4rl8bb</string>
+	<string>com.googleusercontent.apps.389192925801-of1umueglcqh1be8skv9a6d5ons2kcpp</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCbKF4NO3yaWo2LaozyYwixWrcs8avKPM4</string>
+	<string>AIzaSyA8o8MN9L1Idoe4whlyulkUrmKkgqEnXpw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1085246906692</string>
+	<string>389192925801</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>jp.s-santa.LoginWithFiewbaseApp</string>
+	<string>jp.s-santa.GameDataPractice</string>
 	<key>PROJECT_ID</key>
-	<string>loginwithfirebaseapp-af952</string>
+	<string>gamedatap-eda57</string>
 	<key>STORAGE_BUCKET</key>
-	<string>loginwithfirebaseapp-af952.appspot.com</string>
+	<string>gamedatap-eda57.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1085246906692:ios:ede69860139e1c3032b711</string>
+	<string>1:389192925801:ios:95e28a69c1976c2fc258f8</string>
 </dict>
 </plist>

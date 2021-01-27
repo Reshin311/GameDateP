@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class ViewController: UIViewController {
 
@@ -16,11 +18,40 @@ class ViewController: UIViewController {
     @IBOutlet weak var matchResultTextField: UITextField!
     @IBOutlet weak var stadiumTextField: UITextField!
     @IBOutlet weak var gameMemoTextField: UITextField!
+  
+    
+    @IBAction func tappedRegisterButton(_ sender: Any) {
+       
+        let opponent = opponentTextField.text
+        let date = dateTextField.text
+        let matchResult = matchResultTextField.text
+        let stadium = stadiumTextField.text
+        let gameMemo = gameMemoTextField.text
+        
+        let docData = ["opponent": opponent, "date": date, "matchResult": matchResult, "stadium": stadium, "gameMemo": gameMemo] as [String : Any]
+    
+       Firestore.firestore().collection("games").document().setData(docData) { (err) in if let err = err {
+        print("Firestoreへの保存に失敗しました。\(err)")
+                return
+            }
+        
+        print("Firestoreへの保存に成功しました。")
+        
+        }
+
+
+
+
+
+    }
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        gameRegisterButton.isEnabled = false
+       
         opponentTextField.delegate = self
         dateTextField.delegate = self
         matchResultTextField.delegate = self
@@ -46,6 +77,8 @@ extension ViewController: UITextFieldDelegate {
         let matchResultIsEmpty = matchResultTextField.text?.isEmpty ?? true
         let stadiumIsEmpty = stadiumTextField.text?.isEmpty ?? true
         let gameMemoIsEmpty = gameMemoTextField.text?.isEmpty ?? true
+        
+        print("opponentTextField.text@: ",textField.text)
 
         if opponentIsEmpty || dateTextIsEmpty || matchResultIsEmpty || stadiumIsEmpty || gameMemoIsEmpty {
             gameRegisterButton.isEnabled = false

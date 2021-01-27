@@ -13,8 +13,17 @@
 		5451B01925BB7AA900292114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B01725BB7AA900292114 /* Main.storyboard */; };
 		5451B01B25BB7AAC00292114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5451B01A25BB7AAC00292114 /* Assets.xcassets */; };
 		5451B01E25BB7AAC00292114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B01C25BB7AAC00292114 /* LaunchScreen.storyboard */; };
-		5451B02725BB7B4100292114 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5451B02625BB7B4100292114 /* GoogleService-Info.plist */; };
 		5451B03725BCC47C00292114 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B03625BCC47C00292114 /* Search.storyboard */; };
+		5451B05325C0B61D00292114 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5451B05225C0B61D00292114 /* GoogleService-Info.plist */; };
+		5451B05625C0FF1900292114 /* Selection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B05525C0FF1900292114 /* Selection.storyboard */; };
+		5451B05E25C1013000292114 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B05D25C1013000292114 /* Login.storyboard */; };
+		5451B06125C1020900292114 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B06025C1020900292114 /* SignUp.storyboard */; };
+		5451B06425C1024600292114 /* GameResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B06325C1024600292114 /* GameResult.storyboard */; };
+		5451B06725C1028800292114 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06625C1028800292114 /* Selection.swift */; };
+		5451B06A25C102A200292114 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06925C102A200292114 /* Login.swift */; };
+		5451B06D25C102BA00292114 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06C25C102BA00292114 /* SignUp.swift */; };
+		5451B07025C102EA00292114 /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06F25C102EA00292114 /* GameResult.swift */; };
+		5451B07425C1043000292114 /* GameRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B07325C1043000292114 /* GameRegister.storyboard */; };
 		5A27F43804745FB5ACCB887E /* Pods_GameDataPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F29CF6361DE94EEAB36F8B /* Pods_GameDataPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +37,17 @@
 		5451B01A25BB7AAC00292114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5451B01D25BB7AAC00292114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5451B01F25BB7AAC00292114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5451B02625BB7B4100292114 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5451B03625BCC47C00292114 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		5451B05225C0B61D00292114 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5451B05525C0FF1900292114 /* Selection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Selection.storyboard; sourceTree = "<group>"; };
+		5451B05D25C1013000292114 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		5451B06025C1020900292114 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		5451B06325C1024600292114 /* GameResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameResult.storyboard; sourceTree = "<group>"; };
+		5451B06625C1028800292114 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		5451B06925C102A200292114 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5451B06C25C102BA00292114 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		5451B06F25C102EA00292114 /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
+		5451B07325C1043000292114 /* GameRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameRegister.storyboard; sourceTree = "<group>"; };
 		C5B5D37640C3BA91AC85DBEB /* Pods-GameDataPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameDataPractice.release.xcconfig"; path = "Target Support Files/Pods-GameDataPractice/Pods-GameDataPractice.release.xcconfig"; sourceTree = "<group>"; };
 		D0F29CF6361DE94EEAB36F8B /* Pods_GameDataPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameDataPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,7 +98,7 @@
 				5451B03A25BCC4B100292114 /* Controller */,
 				5451B03925BCC49E00292114 /* View */,
 				5451B01A25BB7AAC00292114 /* Assets.xcassets */,
-				5451B02625BB7B4100292114 /* GoogleService-Info.plist */,
+				5451B05225C0B61D00292114 /* GoogleService-Info.plist */,
 				5451B01C25BB7AAC00292114 /* LaunchScreen.storyboard */,
 				5451B01F25BB7AAC00292114 /* Info.plist */,
 			);
@@ -90,8 +108,13 @@
 		5451B03925BCC49E00292114 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5451B05525C0FF1900292114 /* Selection.storyboard */,
 				5451B01725BB7AA900292114 /* Main.storyboard */,
 				5451B03625BCC47C00292114 /* Search.storyboard */,
+				5451B05D25C1013000292114 /* Login.storyboard */,
+				5451B06025C1020900292114 /* SignUp.storyboard */,
+				5451B06325C1024600292114 /* GameResult.storyboard */,
+				5451B07325C1043000292114 /* GameRegister.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				5451B01525BB7AA900292114 /* ViewController.swift */,
+				5451B06625C1028800292114 /* Selection.swift */,
+				5451B06925C102A200292114 /* Login.swift */,
+				5451B06C25C102BA00292114 /* SignUp.swift */,
+				5451B06F25C102EA00292114 /* GameResult.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,10 +200,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5451B01E25BB7AAC00292114 /* LaunchScreen.storyboard in Resources */,
-				5451B02725BB7B4100292114 /* GoogleService-Info.plist in Resources */,
+				5451B05625C0FF1900292114 /* Selection.storyboard in Resources */,
+				5451B06425C1024600292114 /* GameResult.storyboard in Resources */,
+				5451B05E25C1013000292114 /* Login.storyboard in Resources */,
 				5451B01B25BB7AAC00292114 /* Assets.xcassets in Resources */,
+				5451B07425C1043000292114 /* GameRegister.storyboard in Resources */,
+				5451B05325C0B61D00292114 /* GoogleService-Info.plist in Resources */,
 				5451B01925BB7AA900292114 /* Main.storyboard in Resources */,
 				5451B03725BCC47C00292114 /* Search.storyboard in Resources */,
+				5451B06125C1020900292114 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5451B01625BB7AA900292114 /* ViewController.swift in Sources */,
+				5451B06725C1028800292114 /* Selection.swift in Sources */,
 				5451B01225BB7AA900292114 /* AppDelegate.swift in Sources */,
+				5451B06A25C102A200292114 /* Login.swift in Sources */,
+				5451B07025C102EA00292114 /* GameResult.swift in Sources */,
+				5451B06D25C102BA00292114 /* SignUp.swift in Sources */,
 				5451B01425BB7AA900292114 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

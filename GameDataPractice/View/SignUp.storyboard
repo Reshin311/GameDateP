@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ojb-Ml-gIc">
+            <objects>
+                <viewController id="fh0-Iu-RxT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ee-rX-V7a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdF-5b-8WJ">
+                                <rect key="frame" x="100" y="144" width="214.5" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oaR-1b-mIf">
+                                <rect key="frame" x="20" y="236" width="374" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-ns-DeR">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="95"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oV-F4-cFJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4LE-DT-Lhn">
+                                                <rect key="frame" x="0.0" y="20.5" width="374" height="74.5"/>
+                                                <color key="backgroundColor" red="0.91311072339999999" green="0.91311072339999999" blue="0.91311072339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L4L-eg-Ni0">
+                                        <rect key="frame" x="0.0" y="105" width="374" height="95"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETo-An-FsD">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zPa-ma-ayK">
+                                                <rect key="frame" x="0.0" y="20.5" width="374" height="74.5"/>
+                                                <color key="backgroundColor" red="0.91311072339999999" green="0.91311072339999999" blue="0.91311072339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="EQ3-0T-Ic1"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7va-w5-rgI">
+                                <rect key="frame" x="132" y="456" width="150" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="hoE-Mu-Fk4"/>
+                                </constraints>
+                                <state key="normal" title="登録"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fGJ-jx-vhN"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fGJ-jx-vhN" firstAttribute="trailing" secondItem="oaR-1b-mIf" secondAttribute="trailing" constant="20" id="AJa-6l-Dcl"/>
+                            <constraint firstItem="OdF-5b-8WJ" firstAttribute="centerX" secondItem="3ee-rX-V7a" secondAttribute="centerX" id="B76-vs-xLl"/>
+                            <constraint firstItem="oaR-1b-mIf" firstAttribute="top" secondItem="OdF-5b-8WJ" secondAttribute="bottom" constant="20" id="D5w-e6-71L"/>
+                            <constraint firstItem="7va-w5-rgI" firstAttribute="centerX" secondItem="3ee-rX-V7a" secondAttribute="centerX" id="ire-a5-D2f"/>
+                            <constraint firstItem="OdF-5b-8WJ" firstAttribute="top" secondItem="fGJ-jx-vhN" secondAttribute="top" constant="100" id="uee-2E-GQv"/>
+                            <constraint firstItem="7va-w5-rgI" firstAttribute="top" secondItem="oaR-1b-mIf" secondAttribute="bottom" constant="20" id="wFp-iU-zAN"/>
+                            <constraint firstItem="oaR-1b-mIf" firstAttribute="leading" secondItem="fGJ-jx-vhN" secondAttribute="leading" constant="20" id="zRd-Uk-Rzu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5e-SH-0zY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
