@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,6 +126,14 @@
                                     <action selector="tappedRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ss2-uD-8bo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8z-Ze-Puh">
+                                <rect key="frame" x="282" y="514" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SignUpへ"/>
+                                <connections>
+                                    <action selector="pushSignUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PIs-3w-SPB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -143,6 +151,7 @@
                         <outlet property="dateTextField" destination="ULp-WY-Pv5" id="87S-97-H8j"/>
                         <outlet property="gameMemoTextField" destination="oc4-KP-mn8" id="NPM-hW-i58"/>
                         <outlet property="gameRegisterButton" destination="C7z-Bg-yrd" id="SlF-9b-fQF"/>
+                        <outlet property="goSignUpButton" destination="I8z-Ze-Puh" id="RKJ-0M-DQL"/>
                         <outlet property="matchResultTextField" destination="Fxe-is-8GT" id="ljD-WQ-T51"/>
                         <outlet property="opponentTextField" destination="8TR-dO-jlA" id="CdQ-Fc-y3U"/>
                         <outlet property="stadiumTextField" destination="2zj-tT-Fzb" id="pkg-dY-Yxf"/>
@@ -150,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-168.11594202898553" y="88.392857142857139"/>
+            <point key="canvasLocation" x="-62" y="-22"/>
         </scene>
     </scenes>
     <resources>

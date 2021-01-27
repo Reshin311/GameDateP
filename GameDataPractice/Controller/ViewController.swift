@@ -19,6 +19,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var stadiumTextField: UITextField!
     @IBOutlet weak var gameMemoTextField: UITextField!
   
+    //サインアップボタン仮
+    @IBOutlet weak var goSignUpButton: UIButton!
+    @IBAction func pushSignUpButton(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
+        let ViewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
+        let navController = UINavigationController(rootViewController: ViewController)
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController, animated: true, completion: nil)
+    //    navigationController?.pushViewController(ViewController, animated: true)
+    }
+    
+    
+    
+    
+    
     
     @IBAction func tappedRegisterButton(_ sender: Any) {
        
@@ -51,6 +66,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         gameRegisterButton.isEnabled = false
+        
        
         opponentTextField.delegate = self
         dateTextField.delegate = self
@@ -66,6 +82,14 @@ class ViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    //ナビゲーションバーを表示しない
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    
     
 
 }
@@ -78,7 +102,7 @@ extension ViewController: UITextFieldDelegate {
         let stadiumIsEmpty = stadiumTextField.text?.isEmpty ?? true
         let gameMemoIsEmpty = gameMemoTextField.text?.isEmpty ?? true
         
-        print("opponentTextField.text@: ",textField.text)
+  //        print("opponentTextField.text@: ",textField.text)
 
         if opponentIsEmpty || dateTextIsEmpty || matchResultIsEmpty || stadiumIsEmpty || gameMemoIsEmpty {
             gameRegisterButton.isEnabled = false

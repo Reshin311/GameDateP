@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="U4L-aT-DFc">
             <objects>
-                <viewController id="YGc-P0-6mf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YGc-P0-6mf" customClass="Login" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBu-GU-pA6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,9 @@
                                     <constraint firstAttribute="width" constant="150" id="n26-1S-64Y"/>
                                 </constraints>
                                 <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="tappedRegisterButton:" destination="YGc-P0-6mf" eventType="touchUpInside" id="i8p-zt-Vpz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="umu-Vu-CQH"/>
@@ -85,6 +88,11 @@
                             <constraint firstItem="Ca1-Nz-LlJ" firstAttribute="top" secondItem="uY4-m7-hXw" secondAttribute="bottom" constant="20" id="k5b-zS-UAB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="LoginNameTextField" destination="BcA-4V-qyS" id="8eT-S4-2F6"/>
+                        <outlet property="LoginRegisterButton" destination="At9-Rw-UKw" id="X4f-fu-AIz"/>
+                        <outlet property="emailTextField" destination="l5a-6U-bu7" id="YAX-G3-9H8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bf8-6H-k8I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
