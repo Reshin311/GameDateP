@@ -20,7 +20,7 @@
 		5451B06125C1020900292114 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B06025C1020900292114 /* SignUp.storyboard */; };
 		5451B06425C1024600292114 /* GameResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B06325C1024600292114 /* GameResult.storyboard */; };
 		5451B06725C1028800292114 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06625C1028800292114 /* Selection.swift */; };
-		5451B06A25C102A200292114 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06925C102A200292114 /* Login.swift */; };
+		5451B06A25C102A200292114 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06925C102A200292114 /* LoginViewController.swift */; };
 		5451B06D25C102BA00292114 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06C25C102BA00292114 /* SignUpViewController.swift */; };
 		5451B07025C102EA00292114 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06F25C102EA00292114 /* GameResultViewController.swift */; };
 		5451B07425C1043000292114 /* GameRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B07325C1043000292114 /* GameRegister.storyboard */; };
@@ -44,7 +44,7 @@
 		5451B06025C1020900292114 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		5451B06325C1024600292114 /* GameResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameResult.storyboard; sourceTree = "<group>"; };
 		5451B06625C1028800292114 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
-		5451B06925C102A200292114 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5451B06925C102A200292114 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5451B06C25C102BA00292114 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5451B06F25C102EA00292114 /* GameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
 		5451B07325C1043000292114 /* GameRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameRegister.storyboard; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 			children = (
 				5451B01525BB7AA900292114 /* ViewController.swift */,
 				5451B06625C1028800292114 /* Selection.swift */,
-				5451B06925C102A200292114 /* Login.swift */,
+				5451B06925C102A200292114 /* LoginViewController.swift */,
 				5451B06C25C102BA00292114 /* SignUpViewController.swift */,
 				5451B06F25C102EA00292114 /* GameResultViewController.swift */,
 			);
@@ -264,7 +264,7 @@
 				5451B01625BB7AA900292114 /* ViewController.swift in Sources */,
 				5451B06725C1028800292114 /* Selection.swift in Sources */,
 				5451B01225BB7AA900292114 /* AppDelegate.swift in Sources */,
-				5451B06A25C102A200292114 /* Login.swift in Sources */,
+				5451B06A25C102A200292114 /* LoginViewController.swift in Sources */,
 				5451B07025C102EA00292114 /* GameResultViewController.swift in Sources */,
 				5451B06D25C102BA00292114 /* SignUpViewController.swift in Sources */,
 				5451B01425BB7AA900292114 /* SceneDelegate.swift in Sources */,

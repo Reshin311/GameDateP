@@ -134,6 +134,14 @@
                                     <action selector="pushSignUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PIs-3w-SPB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O52-X3-DRK">
+                                <rect key="frame" x="59" y="514" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="pushLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYa-OX-Cp0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -151,6 +159,7 @@
                         <outlet property="dateTextField" destination="ULp-WY-Pv5" id="87S-97-H8j"/>
                         <outlet property="gameMemoTextField" destination="oc4-KP-mn8" id="NPM-hW-i58"/>
                         <outlet property="gameRegisterButton" destination="C7z-Bg-yrd" id="SlF-9b-fQF"/>
+                        <outlet property="goLoginButton" destination="O52-X3-DRK" id="eaB-TM-Abh"/>
                         <outlet property="goSignUpButton" destination="I8z-Ze-Puh" id="RKJ-0M-DQL"/>
                         <outlet property="matchResultTextField" destination="Fxe-is-8GT" id="ljD-WQ-T51"/>
                         <outlet property="opponentTextField" destination="8TR-dO-jlA" id="CdQ-Fc-y3U"/>

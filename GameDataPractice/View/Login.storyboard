@@ -4,14 +4,13 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login-->
+        <!--Login View Controller-->
         <scene sceneID="U4L-aT-DFc">
             <objects>
-                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YGc-P0-6mf" customClass="Login" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewControlller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YGc-P0-6mf" customClass="LoginViewController" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBu-GU-pA6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,15 +65,18 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="At9-Rw-UKw">
                                 <rect key="frame" x="132" y="456" width="150" height="30"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="n26-1S-64Y"/>
                                 </constraints>
-                                <state key="normal" title="登録"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="tappedRegisterButton:" destination="YGc-P0-6mf" eventType="touchUpInside" id="65Q-EP-teT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="umu-Vu-CQH"/>
-                        <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.68140588877055652" blue="0.44107013634091097" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="At9-Rw-UKw" firstAttribute="top" secondItem="Ca1-Nz-LlJ" secondAttribute="bottom" constant="20" id="4n8-sl-3oc"/>
                             <constraint firstItem="At9-Rw-UKw" firstAttribute="centerX" secondItem="eBu-GU-pA6" secondAttribute="centerX" id="Dwr-zl-j2a"/>
@@ -86,18 +88,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="LoginNameTextField" destination="BcA-4V-qyS" id="8eT-S4-2F6"/>
-                        <outlet property="emailTextField" destination="l5a-6U-bu7" id="YAX-G3-9H8"/>
+                        <outlet property="LoginEmailTextField" destination="l5a-6U-bu7" id="sai-Rh-3Aa"/>
+                        <outlet property="LoginNameTextField" destination="BcA-4V-qyS" id="aeo-xe-1Lu"/>
+                        <outlet property="LoginRegisterButton" destination="At9-Rw-UKw" id="5xv-U5-GvG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bf8-6H-k8I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-187" y="38"/>
+            <point key="canvasLocation" x="-200" y="10"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

@@ -40,10 +40,9 @@ class SignUpViewController: UIViewController {
       
         signUpRegisterButton.isEnabled = false
         
-       
-        signUpEmailTextField.delegate = self
+/*        signUpEmailTextField.delegate = self
         signUpNameTextField.delegate = self
-      
+  */
     }
         
         //入力フォーム以外をタッチすると、キーボードが下がる
@@ -53,11 +52,12 @@ class SignUpViewController: UIViewController {
     }
 }
 
+/*
 extension ViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         let signUpEmailIsEmpty = signUpEmailTextField.text?.isEmpty ?? true
         let signUpNameTextIsEmpty = signUpNameTextField.text?.isEmpty ?? true
-       
+    
   //        print("opponentTextField.text@: ",textField.text)
 
         if signUpEmailIsEmpty || signUpNameTextIsEmpty {
@@ -71,3 +71,4 @@ extension ViewController: UITextFieldDelegate {
     }
     
 }
+*/

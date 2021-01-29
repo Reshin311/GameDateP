@@ -30,6 +30,16 @@ class ViewController: UIViewController {
     //    navigationController?.pushViewController(ViewController, animated: true)
     }
     
+    @IBOutlet weak var goLoginButton: UIButton!
+    @IBAction func pushLoginButton(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Login", bundle: nil)
+        let ViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        let navController = UINavigationController(rootViewController: ViewController)
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController, animated: true, completion: nil)
+        
+    }
+    
     
     
     

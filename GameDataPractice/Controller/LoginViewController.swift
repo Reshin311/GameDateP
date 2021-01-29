@@ -9,10 +9,10 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class Login: UIViewController {
+class LoginViewController: UIViewController {
   
     
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var LoginEmailTextField: UITextField!
     @IBOutlet weak var LoginNameTextField: UITextField!
     @IBOutlet weak var LoginRegisterButton: UIButton!
 
@@ -24,7 +24,7 @@ class Login: UIViewController {
     }
     
     private func handleAuthToFirebase() {
-        guard let email = emailTextField.text else { return }
+        guard let email = LoginEmailTextField.text else { return }
         guard let LoginName = LoginNameTextField.text else { return }
         
         Auth.auth().createUser(withEmail: email, password: LoginName) { (res, err) in
