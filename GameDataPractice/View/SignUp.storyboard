@@ -71,6 +71,9 @@
                                     <constraint firstAttribute="width" constant="150" id="hoE-Mu-Fk4"/>
                                 </constraints>
                                 <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="tappedSignUpButton:" destination="fh0-Iu-RxT" eventType="touchUpInside" id="63Q-Ms-DBp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fGJ-jx-vhN"/>
@@ -85,6 +88,11 @@
                             <constraint firstItem="oaR-1b-mIf" firstAttribute="leading" secondItem="fGJ-jx-vhN" secondAttribute="leading" constant="20" id="zRd-Uk-Rzu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="signUpEmailTextField" destination="4LE-DT-Lhn" id="3Qd-xw-dHp"/>
+                        <outlet property="signUpNameTextField" destination="zPa-ma-ayK" id="0JG-6P-kv8"/>
+                        <outlet property="signUpRegisterButton" destination="7va-w5-rgI" id="emH-Rr-cEj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5e-SH-0zY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
