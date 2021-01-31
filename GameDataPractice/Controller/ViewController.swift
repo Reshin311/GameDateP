@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         self.present(navController, animated: true, completion: nil)
     //    navigationController?.pushViewController(ViewController, animated: true)
     }
-    
+    //Login画面へ
     @IBOutlet weak var goLoginButton: UIButton!
     @IBAction func pushLoginButton(_ sender: Any) {
         let storyBoard = UIStoryboard(name: "Login", bundle: nil)
@@ -39,12 +39,7 @@ class ViewController: UIViewController {
         self.present(navController, animated: true, completion: nil)
         
     }
-    
-    
-    
-    
-    
-    
+    //
     @IBAction func tappedRegisterButton(_ sender: Any) {
        
         let opponent = opponentTextField.text

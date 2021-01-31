@@ -19,11 +19,12 @@
 		5451B05E25C1013000292114 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B05D25C1013000292114 /* Login.storyboard */; };
 		5451B06125C1020900292114 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B06025C1020900292114 /* SignUp.storyboard */; };
 		5451B06425C1024600292114 /* GameResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B06325C1024600292114 /* GameResult.storyboard */; };
-		5451B06725C1028800292114 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06625C1028800292114 /* Selection.swift */; };
 		5451B06A25C102A200292114 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06925C102A200292114 /* LoginViewController.swift */; };
 		5451B06D25C102BA00292114 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06C25C102BA00292114 /* SignUpViewController.swift */; };
 		5451B07025C102EA00292114 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B06F25C102EA00292114 /* GameResultViewController.swift */; };
 		5451B07425C1043000292114 /* GameRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5451B07325C1043000292114 /* GameRegister.storyboard */; };
+		5451B08025C5723D00292114 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B07F25C5723D00292114 /* SelectViewController.swift */; };
+		5451B08325C5765E00292114 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B08225C5765E00292114 /* SearchViewController.swift */; };
 		5A27F43804745FB5ACCB887E /* Pods_GameDataPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F29CF6361DE94EEAB36F8B /* Pods_GameDataPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +44,12 @@
 		5451B05D25C1013000292114 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		5451B06025C1020900292114 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		5451B06325C1024600292114 /* GameResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameResult.storyboard; sourceTree = "<group>"; };
-		5451B06625C1028800292114 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
 		5451B06925C102A200292114 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5451B06C25C102BA00292114 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5451B06F25C102EA00292114 /* GameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
 		5451B07325C1043000292114 /* GameRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameRegister.storyboard; sourceTree = "<group>"; };
+		5451B07F25C5723D00292114 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		5451B08225C5765E00292114 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C5B5D37640C3BA91AC85DBEB /* Pods-GameDataPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameDataPractice.release.xcconfig"; path = "Target Support Files/Pods-GameDataPractice/Pods-GameDataPractice.release.xcconfig"; sourceTree = "<group>"; };
 		D0F29CF6361DE94EEAB36F8B /* Pods_GameDataPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameDataPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,8 +112,8 @@
 			children = (
 				5451B05525C0FF1900292114 /* Selection.storyboard */,
 				5451B01725BB7AA900292114 /* Main.storyboard */,
-				5451B03625BCC47C00292114 /* Search.storyboard */,
 				5451B05D25C1013000292114 /* Login.storyboard */,
+				5451B03625BCC47C00292114 /* Search.storyboard */,
 				5451B06025C1020900292114 /* SignUp.storyboard */,
 				5451B06325C1024600292114 /* GameResult.storyboard */,
 				5451B07325C1043000292114 /* GameRegister.storyboard */,
@@ -123,10 +125,11 @@
 			isa = PBXGroup;
 			children = (
 				5451B01525BB7AA900292114 /* ViewController.swift */,
-				5451B06625C1028800292114 /* Selection.swift */,
 				5451B06925C102A200292114 /* LoginViewController.swift */,
 				5451B06C25C102BA00292114 /* SignUpViewController.swift */,
 				5451B06F25C102EA00292114 /* GameResultViewController.swift */,
+				5451B07F25C5723D00292114 /* SelectViewController.swift */,
+				5451B08225C5765E00292114 /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,9 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5451B01625BB7AA900292114 /* ViewController.swift in Sources */,
-				5451B06725C1028800292114 /* Selection.swift in Sources */,
 				5451B01225BB7AA900292114 /* AppDelegate.swift in Sources */,
+				5451B08325C5765E00292114 /* SearchViewController.swift in Sources */,
 				5451B06A25C102A200292114 /* LoginViewController.swift in Sources */,
+				5451B08025C5723D00292114 /* SelectViewController.swift in Sources */,
 				5451B07025C102EA00292114 /* GameResultViewController.swift in Sources */,
 				5451B06D25C102BA00292114 /* SignUpViewController.swift in Sources */,
 				5451B01425BB7AA900292114 /* SceneDelegate.swift in Sources */,
