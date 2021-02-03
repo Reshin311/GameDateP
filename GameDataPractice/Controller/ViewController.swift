@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+import PKHUD
 
 class ViewController: UIViewController {
 
@@ -23,22 +24,39 @@ class ViewController: UIViewController {
     @IBOutlet weak var goSignUpButton: UIButton!
     @IBAction func pushSignUpButton(_ sender: Any) {
         let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
-        let ViewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
-        let navController = UINavigationController(rootViewController: ViewController)
+        let SignUpViewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
+        navigationController?.pushViewController(SignUpViewController, animated: true)
+
+        
+        
+        
+        
+        
+        
+        
+        
+ /*       let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
+        let SignUpViewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
+        let navController = UINavigationController(rootViewController: viewController)
         navController.modalPresentationStyle = .fullScreen
-        self.present(navController, animated: true, completion: nil)
-    //    navigationController?.pushViewController(ViewController, animated: true)
-    }
+ self.present(navController, animated: true, completion: nil)
+ */
+ 
+ }
     //Login画面へ
-    @IBOutlet weak var goLoginButton: UIButton!
+/*    @IBOutlet weak var goLoginButton: UIButton!
     @IBAction func pushLoginButton(_ sender: Any) {
+    
+   
+        
         let storyBoard = UIStoryboard(name: "Login", bundle: nil)
-        let ViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-        let navController = UINavigationController(rootViewController: ViewController)
+        let LoginViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        let navController = UINavigationController(rootViewController: viewController)
         navController.modalPresentationStyle = .fullScreen
         self.present(navController, animated: true, completion: nil)
         
     }
+ */
     //
     @IBAction func tappedRegisterButton(_ sender: Any) {
        
@@ -94,6 +112,7 @@ class ViewController: UIViewController {
     
 }
 
+// MARK: - extension
 extension ViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         let opponentIsEmpty = opponentTextField.text?.isEmpty ?? true

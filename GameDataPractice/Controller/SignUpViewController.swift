@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import PKHUD
 
 class SignUpViewController: UIViewController {
 
@@ -50,6 +51,16 @@ class SignUpViewController: UIViewController {
             self.view.endEditing(true)
         
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = true
+    }
+
+
+
+
+
 }
 
 /*

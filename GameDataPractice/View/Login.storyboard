@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="U4L-aT-DFc">
             <objects>
-                <viewController storyboardIdentifier="LoginViewControlller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YGc-P0-6mf" customClass="LoginViewController" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewControlller" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YGc-P0-6mf" customClass="LoginViewController" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBu-GU-pA6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
