@@ -29,12 +29,6 @@ class ViewController: UIViewController {
 
         
         
-        
-        
-        
-        
-        
-        
  /*       let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
         let SignUpViewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
         let navController = UINavigationController(rootViewController: viewController)
@@ -44,11 +38,12 @@ class ViewController: UIViewController {
  
  }
     //Login画面へ
-/*    @IBOutlet weak var goLoginButton: UIButton!
+   @IBOutlet weak var goLoginButton: UIButton!
     @IBAction func pushLoginButton(_ sender: Any) {
-    
-   
-        
+        let storyBoard = UIStoryboard(name: "Login", bundle: nil)
+        let LoginViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        navigationController?.pushViewController(LoginViewController, animated: true)    }
+/*
         let storyBoard = UIStoryboard(name: "Login", bundle: nil)
         let LoginViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
         let navController = UINavigationController(rootViewController: viewController)
@@ -56,7 +51,7 @@ class ViewController: UIViewController {
         self.present(navController, animated: true, completion: nil)
         
     }
- */
+*/
     //
     @IBAction func tappedRegisterButton(_ sender: Any) {
        

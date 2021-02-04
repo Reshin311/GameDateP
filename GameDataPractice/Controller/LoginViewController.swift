@@ -12,6 +12,35 @@ import FirebaseFirestore
 import PKHUD
 
 
+struct User {
+    let date: String
+    let gameMemo: String
+    let matchResult: String
+    let opponent: String
+    let stadium: String
+    
+    init(dic: [String: Any]) {
+        self.date = dic["date"] as! String
+        self.gameMemo = dic["gameMemo"] as! String
+        self.matchResult = dic["matchResult"] as! String
+        self.opponent = dic["opponent"] as! String
+        self.stadium = dic["stadium"] as! String
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 class LoginViewController: UIViewController {
   
     
@@ -23,7 +52,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func tappedRegisterButton(_ sender: Any) {
         print("tapped LoginRegisterButton")
-   
+        HUD.show(.progress, onView: self.view)
         guard let email = LoginEmailTextField.text else { return }
         guard let LoginName = LoginNameTextField.text else { return }
         
@@ -34,7 +63,8 @@ class LoginViewController: UIViewController {
             }
             print("ログインに成功しました。")
    //ログインに成功した後の処理
-            guard let uid = Auth.auth().currentUser?.uid else { return }
+          //  guard let uid = Auth.auth().currentUser?.uid else { return }
+            guard let uid = res?.user.uid else { return }
             let userRef = Firestore.firestore().collection("games").document(uid)
             userRef.getDocument{ (snapshot, err) in
                 if let err = err {
@@ -55,8 +85,8 @@ class LoginViewController: UIViewController {
                   HUD.flash(.success,onView: self.view, delay: 1) { (_) in
                         self.presentToLoginViewController(user: user)
                    }
-                  }
-               }
+                }
+            }
         }
     }
 
