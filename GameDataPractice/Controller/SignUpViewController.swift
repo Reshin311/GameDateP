@@ -45,7 +45,21 @@ class SignUpViewController: UIViewController {
         signUpNameTextField.delegate = self
   */
     }
-        
+     
+    private func presentToMainViewController() {
+            let storyBoard = UIStoryboard(name: "Login", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(identifier: "ViewController") as! LoginViewController
+            let navController = UINavigationController(rootViewController: viewController)
+            navController.modalPresentationStyle = .fullScreen
+            self.present(navController, animated: true, completion: nil)
+            
+        }
+    
+    
+    
+    
+    
+    
         //入力フォーム以外をタッチすると、キーボードが下がる
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)

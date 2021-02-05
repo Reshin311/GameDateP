@@ -23,35 +23,31 @@ class ViewController: UIViewController {
     //サインアップボタン仮
     @IBOutlet weak var goSignUpButton: UIButton!
     @IBAction func pushSignUpButton(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
-        let SignUpViewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
-        navigationController?.pushViewController(SignUpViewController, animated: true)
-
-        
-        
- /*       let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
-        let SignUpViewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
-        let navController = UINavigationController(rootViewController: viewController)
-        navController.modalPresentationStyle = .fullScreen
- self.present(navController, animated: true, completion: nil)
- */
+        print("pushGoSignup")
+ 
+        presentSignUpViewController()
+        /*     let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
+        let ViewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
+        navigationController?.pushViewController(ViewController, animated: true)
+*/
  
  }
     //Login画面へ
    @IBOutlet weak var goLoginButton: UIButton!
     @IBAction func pushLoginButton(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "Login", bundle: nil)
-        let LoginViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-        navigationController?.pushViewController(LoginViewController, animated: true)    }
-/*
-        let storyBoard = UIStoryboard(name: "Login", bundle: nil)
-        let LoginViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-        let navController = UINavigationController(rootViewController: viewController)
-        navController.modalPresentationStyle = .fullScreen
-        self.present(navController, animated: true, completion: nil)
-        
+        print("pushGoLogin")
+       
+        presentToLoginViewController()
     }
+/*
+       let storyBoard2 = UIStoryboard(name: "Login", bundle: nil)
+        let LoginViewController = storyBoard2.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        navigationController?.pushViewController(LoginViewController, animated: true)
+    
+   }
 */
+    
+    
     //
     @IBAction func tappedRegisterButton(_ sender: Any) {
        
@@ -91,18 +87,41 @@ class ViewController: UIViewController {
 
     }
 
+   
+    
+    
+    private func presentSignUpViewController() {
+        print("func present")
+        let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
+            let navController = UINavigationController(rootViewController: viewController)
+            navController.modalPresentationStyle = .fullScreen
+            self.present(navController, animated: true, completion: nil)
+            
+        }
+  
+    private func presentToLoginViewController() {
+            let storyBoard = UIStoryboard(name: "Login", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+            let navController = UINavigationController(rootViewController: viewController)
+            navController.modalPresentationStyle = .fullScreen
+            self.present(navController, animated: true, completion: nil)
+            
+        }
+  
+    
     //入力フォーム以外をタッチすると、キーボードが下がる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
     //ナビゲーションバーを表示しない
-    override func viewWillAppear(_ animated: Bool) {
+       override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBar.isHidden = true
     }
-    
+ 
     
     
 }

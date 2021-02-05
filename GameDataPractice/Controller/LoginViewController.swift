@@ -29,18 +29,6 @@ struct User {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 class LoginViewController: UIViewController {
   
     
@@ -108,6 +96,21 @@ class LoginViewController: UIViewController {
     
         }
 
+    private func presentToMainViewController() {
+            let storyBoard = UIStoryboard(name: "Login", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(identifier: "ViewController") as! LoginViewController
+            let navController = UINavigationController(rootViewController: viewController)
+            navController.modalPresentationStyle = .fullScreen
+            self.present(navController, animated: true, completion: nil)
+            
+        }
+    
+    
+    
+    
+    
+    
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)
