@@ -12,7 +12,7 @@
         <scene sceneID="16S-iq-4zz">
             <objects>
                 <viewController storyboardIdentifier="SelectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4hZ-jV-yJm" customClass="SelectViewController" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fSA-Z5-wKs">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SearchViewController" id="fSA-Z5-wKs" customClass="SearchViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

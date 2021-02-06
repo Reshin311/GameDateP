@@ -75,6 +75,14 @@
                                     <action selector="tappedSignUpButton:" destination="fh0-Iu-RxT" eventType="touchUpInside" id="63Q-Ms-DBp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdo-iO-9vr">
+                                <rect key="frame" x="39" y="456" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="結果入力へ"/>
+                                <connections>
+                                    <action selector="pushGoMainButton:" destination="fh0-Iu-RxT" eventType="touchUpInside" id="O32-NO-SB4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fGJ-jx-vhN"/>
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,6 +97,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="goMainButton" destination="bdo-iO-9vr" id="HKN-9B-PWn"/>
                         <outlet property="signUpEmailTextField" destination="4LE-DT-Lhn" id="3Qd-xw-dHp"/>
                         <outlet property="signUpNameTextField" destination="zPa-ma-ayK" id="0JG-6P-kv8"/>
                         <outlet property="signUpRegisterButton" destination="7va-w5-rgI" id="emH-Rr-cEj"/>

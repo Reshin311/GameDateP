@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="U4L-aT-DFc">
             <objects>
-                <viewController storyboardIdentifier="LoginViewControlller" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YGc-P0-6mf" customClass="LoginViewController" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YGc-P0-6mf" customClass="LoginViewController" customModule="GameDataPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBu-GU-pA6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,6 +74,14 @@
                                     <action selector="tappedRegisterButton:" destination="YGc-P0-6mf" eventType="touchUpInside" id="65Q-EP-teT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UN1-Xm-1I2">
+                                <rect key="frame" x="20" y="456" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="結果入力へ"/>
+                                <connections>
+                                    <action selector="pushGoMainButton:" destination="YGc-P0-6mf" eventType="touchUpInside" id="Cgt-4Z-dcI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="umu-Vu-CQH"/>
                         <color key="backgroundColor" red="1" green="0.68140588877055652" blue="0.44107013634091097" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
@@ -91,6 +99,7 @@
                         <outlet property="LoginEmailTextField" destination="l5a-6U-bu7" id="sai-Rh-3Aa"/>
                         <outlet property="LoginNameTextField" destination="BcA-4V-qyS" id="aeo-xe-1Lu"/>
                         <outlet property="LoginRegisterButton" destination="At9-Rw-UKw" id="5xv-U5-GvG"/>
+                        <outlet property="goMainButton" destination="UN1-Xm-1I2" id="WCl-Da-JW8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bf8-6H-k8I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

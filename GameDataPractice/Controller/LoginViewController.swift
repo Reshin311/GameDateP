@@ -35,7 +35,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var LoginEmailTextField: UITextField!
     @IBOutlet weak var LoginNameTextField: UITextField!
     @IBOutlet weak var LoginRegisterButton: UIButton!
-
+    @IBOutlet weak var goMainButton: UIButton!
+    
     
     
     @IBAction func tappedRegisterButton(_ sender: Any) {
@@ -71,21 +72,15 @@ class LoginViewController: UIViewController {
             print("ユーザー情報の取得ができました。" )
                   HUD.hide { (_) in
                   HUD.flash(.success,onView: self.view, delay: 1) { (_) in
-                        self.presentToLoginViewController(user: user)
                    }
                 }
             }
         }
     }
 
-    private func presentToLoginViewController(user: User) {
-    let storyBoard = UIStoryboard(name: "Login", bundle: nil)
-    let LoginViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-    let navController = UINavigationController(rootViewController: LoginViewController)
-    navController.modalPresentationStyle = .fullScreen
-    self.present(navController, animated: true, completion: nil)
-    
-}
+    @IBAction func pushGoMainButton(_ sender: Any) {
+ 
+    }
     
         
     override func viewDidLoad() {

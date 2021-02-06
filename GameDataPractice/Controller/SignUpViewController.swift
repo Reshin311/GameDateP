@@ -15,6 +15,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpEmailTextField: UITextField!
     @IBOutlet weak var signUpNameTextField: UITextField!
     @IBOutlet weak var signUpRegisterButton: UIButton!
+    @IBOutlet weak var goMainButton: UIButton!
     
     
     @IBAction func tappedSignUpButton(_ sender: Any) {
@@ -36,6 +37,16 @@ class SignUpViewController: UIViewController {
          }
 
          }
+    
+    
+    @IBAction func pushGoMainButton(_ sender: Any) {
+   
+    
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       
