@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     @IBAction func pushLoginButton(_ sender: Any) {
         print("pushGoLogin")
        
-        presentToLoginViewController()
+        presentLoginViewController()
     }
 /*
        let storyBoard2 = UIStoryboard(name: "Login", bundle: nil)
@@ -92,7 +92,7 @@ class ViewController: UIViewController {
     
     private func presentSignUpViewController() {
         print("func present")
-        let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
+            let storyBoard = UIStoryboard(name: "SignUp", bundle: nil)
             let viewController = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
             let navController = UINavigationController(rootViewController: viewController)
             navController.modalPresentationStyle = .fullScreen
@@ -100,7 +100,7 @@ class ViewController: UIViewController {
             
         }
   
-    private func presentToLoginViewController() {
+    private func presentLoginViewController() {
             let storyBoard = UIStoryboard(name: "Login", bundle: nil)
             let viewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
             let navController = UINavigationController(rootViewController: viewController)
